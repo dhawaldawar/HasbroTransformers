@@ -22,15 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
 
         let listViewController = UIStoryboard.loadTransformerListViewController()
-        let api = TransformerAPIImpl(networkService: NetworkServiceImpl(urlSession: URLSession.shared))
-        
-//        let transformer = Transformer(name: "Transformer", team: .autobot, strength: 1, intelligence: 2, speed: 3, endurance: 4, rank: 5, courage: 3, firepower: 4, skill: 5)
-//        
-//        api.create(transformer: transformer) { _ in
-//            
-//        }
-        let listViewModel = TransformerListViewModelImpl(transformerAPI: api)
-        listViewController.viewModel = listViewModel
+        listViewController.viewModel = TransformerListCoordinator.viewModel
         let navigationController = UINavigationController(rootViewController: listViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
