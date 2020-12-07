@@ -10,13 +10,23 @@
 		32ADB91F720A9D246B67F266 /* Pods_HasbroTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A290D849581A248E6D73F7B0 /* Pods_HasbroTransformers.framework */; };
 		FE407BE1257D61F1002FC4BA /* TransformerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE0257D61F1002FC4BA /* TransformerAPITests.swift */; };
 		FE407BE3257D6258002FC4BA /* NetworkServiceFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE2257D6258002FC4BA /* NetworkServiceFakeImpl.swift */; };
+		FE407BE5257E21A5002FC4BA /* TransformerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */; };
+		FE407BE7257E21E6002FC4BA /* TransformerListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */; };
+		FE407BE9257E258C002FC4BA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE8257E258C002FC4BA /* LoadingViewController.swift */; };
+		FE407BED257E40EC002FC4BA /* UIViewController+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */; };
+		FE407BEE257E40EC002FC4BA /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */; };
+		FE407BEF257E40EC002FC4BA /* UIStoryboard+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */; };
+		FE407BF1257E443A002FC4BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF0257E443A002FC4BA /* BaseViewController.swift */; };
+		FE407BF3257E6A08002FC4BA /* TransformerListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */; };
+		FE407BF5257E7BD0002FC4BA /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */; };
+		FE407BFA257E858F002FC4BA /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF9257E858F002FC4BA /* Localization.swift */; };
 		FEDED77E257BCC6E00E8AAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */; };
 		FEDED780257BCC6E00E8AAB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED77F257BCC6E00E8AAB6 /* SceneDelegate.swift */; };
 		FEDED785257BCC6E00E8AAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDED783257BCC6E00E8AAB6 /* Main.storyboard */; };
 		FEDED787257BCC7300E8AAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDED786257BCC7300E8AAB6 /* Assets.xcassets */; };
 		FEDED78A257BCC7300E8AAB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDED788257BCC7300E8AAB6 /* LaunchScreen.storyboard */; };
 		FEDED795257BCC7400E8AAB6 /* HasbroTransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED794257BCC7400E8AAB6 /* HasbroTransformersTests.swift */; };
-		FEDED7A5257BCF7000E8AAB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7A2257BCF7000E8AAB6 /* ViewController.swift */; };
+		FEDED7A5257BCF7000E8AAB6 /* TransformerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */; };
 		FEDED7A7257BD38200E8AAB6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FEDED7A6257BD38200E8AAB6 /* Podfile */; };
 		FEDED7AC257C1E5300E8AAB6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7AB257C1E5300E8AAB6 /* NetworkService.swift */; };
 		FEDED7AF257C27B300E8AAB6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7AE257C27B300E8AAB6 /* Log.swift */; };
@@ -46,6 +56,16 @@
 		DABBD7DAEB4BB140C287655E /* Pods-HasbroTransformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasbroTransformers.release.xcconfig"; path = "Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers.release.xcconfig"; sourceTree = "<group>"; };
 		FE407BE0257D61F1002FC4BA /* TransformerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerAPITests.swift; sourceTree = "<group>"; };
 		FE407BE2257D6258002FC4BA /* NetworkServiceFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFakeImpl.swift; sourceTree = "<group>"; };
+		FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListViewModel.swift; sourceTree = "<group>"; };
+		FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListCellViewModel.swift; sourceTree = "<group>"; };
+		FE407BE8257E258C002FC4BA /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subview.swift"; sourceTree = "<group>"; };
+		FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Loader.swift"; sourceTree = "<group>"; };
+		FE407BF0257E443A002FC4BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListCellView.swift; sourceTree = "<group>"; };
+		FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		FE407BF9257E858F002FC4BA /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		FEDED77A257BCC6E00E8AAB6 /* HasbroTransformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasbroTransformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEDED77F257BCC6E00E8AAB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +76,7 @@
 		FEDED790257BCC7400E8AAB6 /* HasbroTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasbroTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDED794257BCC7400E8AAB6 /* HasbroTransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasbroTransformersTests.swift; sourceTree = "<group>"; };
 		FEDED796257BCC7400E8AAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEDED7A2257BCF7000E8AAB6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformerListViewController.swift; sourceTree = "<group>"; };
 		FEDED7A6257BD38200E8AAB6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		FEDED7AB257C1E5300E8AAB6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FEDED7AE257C27B300E8AAB6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -107,6 +127,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FE407BF6257E802F002FC4BA /* TransformerList */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */,
+				FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */,
+			);
+			path = TransformerList;
+			sourceTree = "<group>";
+		};
+		FE407BF7257E8054002FC4BA /* TransformerList */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */,
+				FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */,
+			);
+			path = TransformerList;
+			sourceTree = "<group>";
+		};
+		FE407BF8257E857A002FC4BA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BF9257E858F002FC4BA /* Localization.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		FEDED771257BCC6E00E8AAB6 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +179,7 @@
 				FEDED7B6257CD04D00E8AAB6 /* HasbroTransformers.entitlements */,
 				FEDED7A6257BD38200E8AAB6 /* Podfile */,
 				FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */,
+				FE407BF8257E857A002FC4BA /* Constants */,
 				FEDED7AD257C27A500E8AAB6 /* Utility */,
 				FEDED79F257BCF7000E8AAB6 /* Model */,
 				FEDED7A1257BCF7000E8AAB6 /* View */,
@@ -170,7 +217,9 @@
 		FEDED7A1257BCF7000E8AAB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FEDED7A2257BCF7000E8AAB6 /* ViewController.swift */,
+				FE407BF6257E802F002FC4BA /* TransformerList */,
+				FE407BE8257E258C002FC4BA /* LoadingViewController.swift */,
+				FE407BF0257E443A002FC4BA /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +227,7 @@
 		FEDED7A3257BCF7000E8AAB6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FE407BF7257E8054002FC4BA /* TransformerList */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +244,10 @@
 		FEDED7A9257C1E3300E8AAB6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */,
+				FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */,
+				FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */,
+				FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -430,17 +484,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE407BE5257E21A5002FC4BA /* TransformerListViewModel.swift in Sources */,
 				FEE66668257D425D006751F6 /* TransformerAPIImpl.swift in Sources */,
-				FEDED7A5257BCF7000E8AAB6 /* ViewController.swift in Sources */,
+				FE407BEF257E40EC002FC4BA /* UIStoryboard+Loader.swift in Sources */,
+				FEDED7A5257BCF7000E8AAB6 /* TransformerListViewController.swift in Sources */,
 				FEDED77E257BCC6E00E8AAB6 /* AppDelegate.swift in Sources */,
+				FE407BF1257E443A002FC4BA /* BaseViewController.swift in Sources */,
 				FEDED7B3257C3E5A00E8AAB6 /* TransformerAPI.swift in Sources */,
 				FEDED7AF257C27B300E8AAB6 /* Log.swift in Sources */,
 				FEDED780257BCC6E00E8AAB6 /* SceneDelegate.swift in Sources */,
+				FE407BF5257E7BD0002FC4BA /* UIImageView+Cache.swift in Sources */,
+				FE407BF3257E6A08002FC4BA /* TransformerListCellView.swift in Sources */,
+				FE407BE9257E258C002FC4BA /* LoadingViewController.swift in Sources */,
 				FEE66662257CD1CC006751F6 /* KeychainService.swift in Sources */,
+				FE407BEE257E40EC002FC4BA /* UIColor+Theme.swift in Sources */,
 				FEDED7B1257C3BB500E8AAB6 /* APIURL.swift in Sources */,
 				FEDED7AC257C1E5300E8AAB6 /* NetworkService.swift in Sources */,
+				FE407BFA257E858F002FC4BA /* Localization.swift in Sources */,
 				FEE66665257D4219006751F6 /* NetworkServiceImpl.swift in Sources */,
 				FEDED7B5257C3EC100E8AAB6 /* Transformer.swift in Sources */,
+				FE407BED257E40EC002FC4BA /* UIViewController+Subview.swift in Sources */,
+				FE407BE7257E21E6002FC4BA /* TransformerListCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
