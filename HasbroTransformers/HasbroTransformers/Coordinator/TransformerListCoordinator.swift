@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct TransformerListCoordinator {
+    
     static var viewModel: TransformerListViewModel {
         let transformerAPI = TransformerAPIImpl(networkService: NetworkServiceManager.shared.service)
         return TransformerListViewModelImpl(transformerAPI: transformerAPI)

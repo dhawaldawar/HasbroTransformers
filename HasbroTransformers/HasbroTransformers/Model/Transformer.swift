@@ -56,6 +56,7 @@ struct Transformer {
     var overallRating: Int { strength + intelligence + speed + endurance + firepower }
     
     init(
+        id: String = "",
         name: String,
         team: Team,
         strength: Int,
@@ -67,7 +68,7 @@ struct Transformer {
         firepower: Int,
         skill: Int
     ) {
-        self.id = ""
+        self.id = id
         self.name = name
         self.team = team
         self.strength = strength
@@ -80,6 +81,7 @@ struct Transformer {
         self.skill = skill
         self.teamIcon = nil
     }
+
 }
 
 extension Transformer: Codable {

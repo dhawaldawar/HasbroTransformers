@@ -15,28 +15,36 @@ protocol TransformerListViewModel {
     /// To observe loading status.
     var loadingStatus: Observable<LoadingStatus> { get }
 
-    /// All the available transformer's view model.
-    var transformersViewModel: BehaviorRelay<[TransformerListCellViewModel]> { get }
+    /// Count of available transformers.
+    var numberOfTransformers: BehaviorRelay<Int> { get }
 
     /// Requests to load all the available transformers.
     func loadTransformers()
+    
+    /// Returns cell view model at given index.
+    func cellViewModel(at index: Int) -> TransformerListCellViewModel
+    
+    /// Returns view model to create new transformer
+    func getViewModelToCreateTransformer() -> TransformerUpdateViewModel
+    
+    /// Returns view model to edit/delete existing transformer.
+    func getViewModelToUpdateTransformer(index: Int) -> TransformerUpdateViewModel
 }
 
 class TransformerListViewModelImpl: TransformerListViewModel {
     var loadingStatus: Observable<LoadingStatus> { _loadingStatus.asObservable() }
-    let transformersViewModel = BehaviorRelay(value: [TransformerListCellViewModel]())
+    let numberOfTransformers = BehaviorRelay(value: 0)
     
     private let _loadingStatus = BehaviorRelay<LoadingStatus>(value: .loaded)
     private let transformerAPI: TransformerAPI
+    private var transformers = [Transformer]()
     
     init(transformerAPI: TransformerAPI) {
         self.transformerAPI = transformerAPI
-        loadTransformers()
     }
     
     func loadTransformers() {
         if case LoadingStatus.loading = _loadingStatus.value {
-            Log.assertionFailure("Transformers list is already being fetched")
             return
         }
 
@@ -55,6 +63,18 @@ class TransformerListViewModelImpl: TransformerListViewModel {
         }
     }
     
+    func cellViewModel(at index: Int) -> TransformerListCellViewModel {
+        TransformerListCellViewModelImpl(transformer: transformers[index])
+    }
+    
+    func getViewModelToCreateTransformer() -> TransformerUpdateViewModel {
+        TransformerUpdateCoordinator.viewModel(transformer: nil)
+    }
+    
+    func getViewModelToUpdateTransformer(index: Int) -> TransformerUpdateViewModel {
+        TransformerUpdateCoordinator.viewModel(transformer: transformers[index])
+    }
+    
     //MARK:- Private
     private func received(transformers: [Transformer]) {
         guard transformers.count != 0 else {
@@ -62,8 +82,8 @@ class TransformerListViewModelImpl: TransformerListViewModel {
             return
         }
 
-        let cellViewModels: [TransformerListCellViewModel] = transformers.map(TransformerListCellViewModelImpl.init)
-        transformersViewModel.accept(cellViewModels)
+        self.transformers = transformers
+        numberOfTransformers.accept(transformers.count)
         _loadingStatus.accept(LoadingStatus.loaded)
     }
 }
