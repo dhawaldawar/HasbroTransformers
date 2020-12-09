@@ -15,15 +15,16 @@ enum TransformerUpdateCompletionStatus {
     case failure(message: String)
 }
 
+/// ViewModel that handles all the activites to create/update/detail transformers.
 protocol TransformerUpdateViewModel {
 
-    /// Name of transformer.
+    /// Name of the transformer.
     var name: BehaviorRelay<String> { get }
     
     /// Transformer's team
     var team: BehaviorRelay<Transformer.Team> { get }
     
-    // Transformer's characteristics
+    // Transformer's stats.
     var strength: BehaviorRelay<Int> { get }
     var speed: BehaviorRelay<Int> { get }
     var rank: BehaviorRelay<Int> { get }
@@ -34,7 +35,7 @@ protocol TransformerUpdateViewModel {
     var skill: BehaviorRelay<Int> { get }
     var overallRating: Observable<Int> { get }
     
-    /// Determine if the update mode is on.
+    /// Determine in which mode view model is being operated.
     var isUpdateMode: Observable<Bool> { get }
     
     /// Compeletion when the operation has been completed.
@@ -43,7 +44,6 @@ protocol TransformerUpdateViewModel {
     /// To observe loading status.
     var loadingStatus: Observable<LoadingStatus> { get }
 
-    
     /// Creates new transformer.
     func create()
     
@@ -88,7 +88,7 @@ class TransformerUpdateViewModelImpl: TransformerUpdateViewModel {
         setupBindings()
         
         if let transformer = transformer {
-            setupUpdateDetails(transformer: transformer)
+            setupDetails(transformer: transformer)
         }
     }
     
@@ -148,8 +148,8 @@ class TransformerUpdateViewModelImpl: TransformerUpdateViewModel {
         performOperation(transformer: transformer, loadingMessage: Localizations.Messages.deletingTransformer, operation: transformerAPI.delete)
     }
     
-    //MARK: Private
-    private func setupUpdateDetails(transformer: Transformer) {
+    //MARK:- Private
+    private func setupDetails(transformer: Transformer) {
         name.accept(transformer.name)
         team.accept(transformer.team)
         strength.accept(transformer.strength)

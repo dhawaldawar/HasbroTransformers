@@ -10,6 +10,7 @@ import Foundation
 import RxRelay
 import RxSwift
 
+/// ViewModel that handles all the activites to list transformers details.
 protocol TransformerListViewModel {
     
     /// To observe loading status.
@@ -22,13 +23,16 @@ protocol TransformerListViewModel {
     func loadTransformers()
     
     /// Returns cell view model at given index.
-    func cellViewModel(at index: Int) -> TransformerListCellViewModel
+    func getCellViewModel(at index: Int) -> TransformerListCellViewModel
     
-    /// Returns view model to create new transformer
+    /// Returns view model to create new transformer.
     func getViewModelToCreateTransformer() -> TransformerUpdateViewModel
     
     /// Returns view model to edit/delete existing transformer.
     func getViewModelToUpdateTransformer(index: Int) -> TransformerUpdateViewModel
+
+    /// Returns view model to show battle of existing transformers.
+    func getViewModelToShowBattle() -> BattleViewModel
 }
 
 class TransformerListViewModelImpl: TransformerListViewModel {
@@ -63,7 +67,7 @@ class TransformerListViewModelImpl: TransformerListViewModel {
         }
     }
     
-    func cellViewModel(at index: Int) -> TransformerListCellViewModel {
+    func getCellViewModel(at index: Int) -> TransformerListCellViewModel {
         TransformerListCellViewModelImpl(transformer: transformers[index])
     }
     
@@ -75,7 +79,11 @@ class TransformerListViewModelImpl: TransformerListViewModel {
         TransformerUpdateCoordinator.viewModel(transformer: transformers[index])
     }
     
-    //MARK:- Private
+    func getViewModelToShowBattle() -> BattleViewModel {
+        BattleCoordinator.viewModel(transformers: transformers)
+    }
+    
+    //MARK:-- Private
     private func received(transformers: [Transformer]) {
         guard transformers.count != 0 else {
             _loadingStatus.accept(.info(message: Localizations.Messages.transformersListUnavailable))

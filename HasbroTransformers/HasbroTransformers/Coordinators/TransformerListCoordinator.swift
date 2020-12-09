@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// Factory cordinator to create objects required to show transformers list.
 struct TransformerListCoordinator {
     
     static var viewModel: TransformerListViewModel {

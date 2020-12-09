@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Responsible to manage the instance of network service that would be used in the production APP.
+/// Responsible to manage an instance of network service that would be used through out the APP.
 class NetworkServiceManager {
     static let shared = NetworkServiceManager()
     let service: NetworkService = NetworkServiceImpl(urlSession: URLSession.shared)

@@ -53,6 +53,6 @@ struct Log {
         guard levels.contains(level) else {
             return
         }
-        print("[\(level.rawValue)]: \(message)")
+        print("[\(level.rawValue)] \(message)")
     }
 }

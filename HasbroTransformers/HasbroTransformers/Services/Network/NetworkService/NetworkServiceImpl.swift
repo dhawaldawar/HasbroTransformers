@@ -159,7 +159,7 @@ class NetworkServiceImpl: NetworkService {
             }
         }.resume()
     }
-    
+
     private func prepareHeaderFields(token: String) -> [String: String] {
         return [
             HearderConstants.Keys.authorization: HearderConstants.Values.authorization(token: token),

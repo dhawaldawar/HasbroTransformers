@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Factory to create objects required to update transformer's details.
 struct TransformerUpdateCoordinator {
     
     static func viewModel(

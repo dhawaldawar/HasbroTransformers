@@ -27,15 +27,15 @@ class LoadingViewController: UIViewController {
     @IBOutlet weak var tryAgainButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     
-    //MARK: Lifecycle
+    //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
     }
     
-    //MARK: Private
+    //MARK:- Private
     private func setupBindings() {
         loadingStatus.subscribe(onNext: { [weak self] status in
             switch status {
