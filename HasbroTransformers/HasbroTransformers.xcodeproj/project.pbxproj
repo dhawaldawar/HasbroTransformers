@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32ADB91F720A9D246B67F266 /* Pods_HasbroTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A290D849581A248E6D73F7B0 /* Pods_HasbroTransformers.framework */; };
+		FE120ACA2580F0FD00808D5F /* BattleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE120AC92580F0FD00808D5F /* BattleViewModelTests.swift */; };
+		FE407BE1257D61F1002FC4BA /* TransformerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE0257D61F1002FC4BA /* TransformerAPITests.swift */; };
+		FE407BE3257D6258002FC4BA /* NetworkServiceFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE2257D6258002FC4BA /* NetworkServiceFakeImpl.swift */; };
+		FE407BE5257E21A5002FC4BA /* TransformerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */; };
+		FE407BE7257E21E6002FC4BA /* TransformerListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */; };
+		FE407BE9257E258C002FC4BA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BE8257E258C002FC4BA /* LoadingViewController.swift */; };
+		FE407BED257E40EC002FC4BA /* UIViewController+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */; };
+		FE407BEE257E40EC002FC4BA /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */; };
+		FE407BEF257E40EC002FC4BA /* UIStoryboard+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */; };
+		FE407BF1257E443A002FC4BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF0257E443A002FC4BA /* BaseViewController.swift */; };
+		FE407BF3257E6A08002FC4BA /* TransformerListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */; };
+		FE407BF5257E7BD0002FC4BA /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */; };
+		FE407BFA257E858F002FC4BA /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BF9257E858F002FC4BA /* Localization.swift */; };
+		FE63DF47257FA44F00383BFD /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF46257FA44F00383BFD /* LaunchCoordinator.swift */; };
+		FE63DF4A257FB64E00383BFD /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF49257FB64E00383BFD /* BattleViewController.swift */; };
+		FE63DF4D257FD11D00383BFD /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF4C257FD11D00383BFD /* BattleViewModel.swift */; };
+		FE63DF4F257FD43100383BFD /* BattleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF4E257FD43100383BFD /* BattleCellViewModel.swift */; };
+		FE63DF51257FFEB300383BFD /* Transformer+Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF50257FFEB300383BFD /* Transformer+Battle.swift */; };
+		FE63DF54257FFF0600383BFD /* TransformerBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF53257FFF0600383BFD /* TransformerBattleTests.swift */; };
+		FE63DF56258019CA00383BFD /* BattleCollectionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF55258019CA00383BFD /* BattleCollectionCellView.swift */; };
+		FE63DF5825801EDC00383BFD /* BattleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63DF5725801EDC00383BFD /* BattleCoordinator.swift */; };
+		FE8C1BCB257EA9510018DAD5 /* TransformerListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C1BCA257EA9510018DAD5 /* TransformerListCoordinator.swift */; };
+		FE8C1BCD257EA9C60018DAD5 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C1BCC257EA9C60018DAD5 /* NetworkServiceManager.swift */; };
+		FE8C1BD0257EBCD50018DAD5 /* TransformerUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C1BCF257EBCD50018DAD5 /* TransformerUpdateViewController.swift */; };
+		FE8C1BD3257EBFEE0018DAD5 /* TransformerUpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C1BD2257EBFEE0018DAD5 /* TransformerUpdateViewModel.swift */; };
+		FE8C1BD5257EC4E70018DAD5 /* TransformerUpdateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C1BD4257EC4E70018DAD5 /* TransformerUpdateCoordinator.swift */; };
+		FEDED77E257BCC6E00E8AAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */; };
+		FEDED780257BCC6E00E8AAB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED77F257BCC6E00E8AAB6 /* SceneDelegate.swift */; };
+		FEDED785257BCC6E00E8AAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDED783257BCC6E00E8AAB6 /* Main.storyboard */; };
+		FEDED787257BCC7300E8AAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDED786257BCC7300E8AAB6 /* Assets.xcassets */; };
+		FEDED78A257BCC7300E8AAB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDED788257BCC7300E8AAB6 /* LaunchScreen.storyboard */; };
+		FEDED795257BCC7400E8AAB6 /* HasbroTransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED794257BCC7400E8AAB6 /* HasbroTransformersTests.swift */; };
+		FEDED7A5257BCF7000E8AAB6 /* TransformerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */; };
+		FEDED7A7257BD38200E8AAB6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FEDED7A6257BD38200E8AAB6 /* Podfile */; };
+		FEDED7AC257C1E5300E8AAB6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7AB257C1E5300E8AAB6 /* NetworkService.swift */; };
+		FEDED7AF257C27B300E8AAB6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7AE257C27B300E8AAB6 /* Log.swift */; };
+		FEDED7B1257C3BB500E8AAB6 /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7B0257C3BB500E8AAB6 /* APIURL.swift */; };
+		FEDED7B3257C3E5A00E8AAB6 /* TransformerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7B2257C3E5A00E8AAB6 /* TransformerAPI.swift */; };
+		FEDED7B5257C3EC100E8AAB6 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDED7B4257C3EC100E8AAB6 /* Transformer.swift */; };
+		FEE66662257CD1CC006751F6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE66661257CD1CC006751F6 /* KeychainService.swift */; };
+		FEE66665257D4219006751F6 /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE66664257D4219006751F6 /* NetworkServiceImpl.swift */; };
+		FEE66668257D425D006751F6 /* TransformerAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE66667257D425D006751F6 /* TransformerAPIImpl.swift */; };
+		FEE6666C257D430F006751F6 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE6666B257D430F006751F6 /* NetworkServiceTests.swift */; };
+		FEE66671257D4E85006751F6 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE66670257D4E85006751F6 /* FakeURLProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEDED791257BCC7400E8AAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDED772257BCC6E00E8AAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEDED779257BCC6E00E8AAB6;
+			remoteInfo = HasbroTransformers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0B86A6A6D94F5D061FA2001 /* Pods-HasbroTransformers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasbroTransformers.debug.xcconfig"; path = "Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers.debug.xcconfig"; sourceTree = "<group>"; };
+		A290D849581A248E6D73F7B0 /* Pods_HasbroTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasbroTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABBD7DAEB4BB140C287655E /* Pods-HasbroTransformers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasbroTransformers.release.xcconfig"; path = "Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers.release.xcconfig"; sourceTree = "<group>"; };
+		FE120AC92580F0FD00808D5F /* BattleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModelTests.swift; sourceTree = "<group>"; };
+		FE407BE0257D61F1002FC4BA /* TransformerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerAPITests.swift; sourceTree = "<group>"; };
+		FE407BE2257D6258002FC4BA /* NetworkServiceFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFakeImpl.swift; sourceTree = "<group>"; };
+		FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListViewModel.swift; sourceTree = "<group>"; };
+		FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListCellViewModel.swift; sourceTree = "<group>"; };
+		FE407BE8257E258C002FC4BA /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Subview.swift"; sourceTree = "<group>"; };
+		FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Loader.swift"; sourceTree = "<group>"; };
+		FE407BF0257E443A002FC4BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListCellView.swift; sourceTree = "<group>"; };
+		FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		FE407BF9257E858F002FC4BA /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		FE63DF46257FA44F00383BFD /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
+		FE63DF49257FB64E00383BFD /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		FE63DF4C257FD11D00383BFD /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModel.swift; sourceTree = "<group>"; };
+		FE63DF4E257FD43100383BFD /* BattleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleCellViewModel.swift; sourceTree = "<group>"; };
+		FE63DF50257FFEB300383BFD /* Transformer+Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transformer+Battle.swift"; sourceTree = "<group>"; };
+		FE63DF53257FFF0600383BFD /* TransformerBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerBattleTests.swift; sourceTree = "<group>"; };
+		FE63DF55258019CA00383BFD /* BattleCollectionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleCollectionCellView.swift; sourceTree = "<group>"; };
+		FE63DF5725801EDC00383BFD /* BattleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleCoordinator.swift; sourceTree = "<group>"; };
+		FE8C1BCA257EA9510018DAD5 /* TransformerListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerListCoordinator.swift; sourceTree = "<group>"; };
+		FE8C1BCC257EA9C60018DAD5 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		FE8C1BCF257EBCD50018DAD5 /* TransformerUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerUpdateViewController.swift; sourceTree = "<group>"; };
+		FE8C1BD2257EBFEE0018DAD5 /* TransformerUpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerUpdateViewModel.swift; sourceTree = "<group>"; };
+		FE8C1BD4257EC4E70018DAD5 /* TransformerUpdateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerUpdateCoordinator.swift; sourceTree = "<group>"; };
+		FEDED77A257BCC6E00E8AAB6 /* HasbroTransformers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasbroTransformers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEDED77F257BCC6E00E8AAB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEDED784257BCC6E00E8AAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEDED786257BCC7300E8AAB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEDED789257BCC7300E8AAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEDED78B257BCC7300E8AAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDED790257BCC7400E8AAB6 /* HasbroTransformersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasbroTransformersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDED794257BCC7400E8AAB6 /* HasbroTransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasbroTransformersTests.swift; sourceTree = "<group>"; };
+		FEDED796257BCC7400E8AAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformerListViewController.swift; sourceTree = "<group>"; };
+		FEDED7A6257BD38200E8AAB6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FEDED7AB257C1E5300E8AAB6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FEDED7AE257C27B300E8AAB6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FEDED7B0257C3BB500E8AAB6 /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		FEDED7B2257C3E5A00E8AAB6 /* TransformerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerAPI.swift; sourceTree = "<group>"; };
+		FEDED7B4257C3EC100E8AAB6 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		FEDED7B6257CD04D00E8AAB6 /* HasbroTransformers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HasbroTransformers.entitlements; sourceTree = "<group>"; };
+		FEE66661257CD1CC006751F6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		FEE66664257D4219006751F6 /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
+		FEE66667257D425D006751F6 /* TransformerAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerAPIImpl.swift; sourceTree = "<group>"; };
+		FEE6666B257D430F006751F6 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FEE66670257D4E85006751F6 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEDED777257BCC6E00E8AAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32ADB91F720A9D246B67F266 /* Pods_HasbroTransformers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDED78D257BCC7400E8AAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2919DB1A65C48DA932253B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A290D849581A248E6D73F7B0 /* Pods_HasbroTransformers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1C15B679AB351FB1B423B9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0B86A6A6D94F5D061FA2001 /* Pods-HasbroTransformers.debug.xcconfig */,
+				DABBD7DAEB4BB140C287655E /* Pods-HasbroTransformers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE120ACB2581391100808D5F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED783257BCC6E00E8AAB6 /* Main.storyboard */,
+				FEDED788257BCC7300E8AAB6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE407BF6257E802F002FC4BA /* TransformerList */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED7A2257BCF7000E8AAB6 /* TransformerListViewController.swift */,
+				FE407BF2257E6A08002FC4BA /* TransformerListCellView.swift */,
+			);
+			path = TransformerList;
+			sourceTree = "<group>";
+		};
+		FE407BF7257E8054002FC4BA /* TransformerList */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BE4257E21A5002FC4BA /* TransformerListViewModel.swift */,
+				FE407BE6257E21E6002FC4BA /* TransformerListCellViewModel.swift */,
+			);
+			path = TransformerList;
+			sourceTree = "<group>";
+		};
+		FE407BF8257E857A002FC4BA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BF9257E858F002FC4BA /* Localization.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FE63DF48257FB63C00383BFD /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				FE63DF49257FB64E00383BFD /* BattleViewController.swift */,
+				FE63DF55258019CA00383BFD /* BattleCollectionCellView.swift */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		FE63DF4B257FD10D00383BFD /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				FE63DF4C257FD11D00383BFD /* BattleViewModel.swift */,
+				FE63DF4E257FD43100383BFD /* BattleCellViewModel.swift */,
+				FE63DF50257FFEB300383BFD /* Transformer+Battle.swift */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		FE63DF52257FFEE000383BFD /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				FE63DF53257FFF0600383BFD /* TransformerBattleTests.swift */,
+				FE120AC92580F0FD00808D5F /* BattleViewModelTests.swift */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		FE8C1BC9257EA9390018DAD5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FE63DF46257FA44F00383BFD /* LaunchCoordinator.swift */,
+				FE8C1BCA257EA9510018DAD5 /* TransformerListCoordinator.swift */,
+				FE8C1BD4257EC4E70018DAD5 /* TransformerUpdateCoordinator.swift */,
+				FE63DF5725801EDC00383BFD /* BattleCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		FE8C1BCE257EBCB40018DAD5 /* TransformerUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C1BCF257EBCD50018DAD5 /* TransformerUpdateViewController.swift */,
+			);
+			path = TransformerUpdate;
+			sourceTree = "<group>";
+		};
+		FE8C1BD1257EBFD40018DAD5 /* TransformerUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C1BD2257EBFEE0018DAD5 /* TransformerUpdateViewModel.swift */,
+			);
+			path = TransformerUpdate;
+			sourceTree = "<group>";
+		};
+		FECE467D25814B79002B294C /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BE8257E258C002FC4BA /* LoadingViewController.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		FECE467E25814B81002B294C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BF0257E443A002FC4BA /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FEDED771257BCC6E00E8AAB6 = {
+			isa = PBXGroup;
+			children = (
+				FEDED77C257BCC6E00E8AAB6 /* HasbroTransformers */,
+				FEDED7B6257CD04D00E8AAB6 /* HasbroTransformers.entitlements */,
+				FEDED7A6257BD38200E8AAB6 /* Podfile */,
+				FEDED77D257BCC6E00E8AAB6 /* AppDelegate.swift */,
+				FEDED77F257BCC6E00E8AAB6 /* SceneDelegate.swift */,
+				FEDED786257BCC7300E8AAB6 /* Assets.xcassets */,
+				FEDED78B257BCC7300E8AAB6 /* Info.plist */,
+				FEDED793257BCC7400E8AAB6 /* HasbroTransformersTests */,
+				FEDED77B257BCC6E00E8AAB6 /* Products */,
+				C1C15B679AB351FB1B423B9E /* Pods */,
+				2919DB1A65C48DA932253B29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEDED77B257BCC6E00E8AAB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED77A257BCC6E00E8AAB6 /* HasbroTransformers.app */,
+				FEDED790257BCC7400E8AAB6 /* HasbroTransformersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEDED77C257BCC6E00E8AAB6 /* HasbroTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BF8257E857A002FC4BA /* Constants */,
+				FE8C1BC9257EA9390018DAD5 /* Coordinators */,
+				FEDED7AD257C27A500E8AAB6 /* Utility */,
+				FEDED79F257BCF7000E8AAB6 /* Models */,
+				FEDED7A1257BCF7000E8AAB6 /* Views */,
+				FEDED7A3257BCF7000E8AAB6 /* ViewModels */,
+				FEDED7A9257C1E3300E8AAB6 /* Extensions */,
+				FEDED7A8257C1E3300E8AAB6 /* Services */,
+			);
+			path = HasbroTransformers;
+			sourceTree = "<group>";
+		};
+		FEDED793257BCC7400E8AAB6 /* HasbroTransformersTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEE6666E257D4345006751F6 /* Fake */,
+				FEE6666D257D433E006751F6 /* Tests */,
+				FEDED794257BCC7400E8AAB6 /* HasbroTransformersTests.swift */,
+				FEDED796257BCC7400E8AAB6 /* Info.plist */,
+			);
+			path = HasbroTransformersTests;
+			sourceTree = "<group>";
+		};
+		FEDED79F257BCF7000E8AAB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED7B4257C3EC100E8AAB6 /* Transformer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEDED7A1257BCF7000E8AAB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE120ACB2581391100808D5F /* Storyboards */,
+				FECE467E25814B81002B294C /* Base */,
+				FECE467D25814B79002B294C /* Loading */,
+				FE407BF6257E802F002FC4BA /* TransformerList */,
+				FE8C1BCE257EBCB40018DAD5 /* TransformerUpdate */,
+				FE63DF48257FB63C00383BFD /* Battle */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEDED7A3257BCF7000E8AAB6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BF7257E8054002FC4BA /* TransformerList */,
+				FE8C1BD1257EBFD40018DAD5 /* TransformerUpdate */,
+				FE63DF4B257FD10D00383BFD /* Battle */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FEDED7A8257C1E3300E8AAB6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEE66660257CD1BD006751F6 /* Keychain */,
+				FEDED7AA257C1E4500E8AAB6 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEDED7A9257C1E3300E8AAB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BEB257E40EC002FC4BA /* UIColor+Theme.swift */,
+				FE407BEC257E40EC002FC4BA /* UIStoryboard+Loader.swift */,
+				FE407BEA257E40EC002FC4BA /* UIViewController+Subview.swift */,
+				FE407BF4257E7BCF002FC4BA /* UIImageView+Cache.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEDED7AA257C1E4500E8AAB6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEE66666257D4241006751F6 /* TransformerAPI */,
+				FEE66663257D41F4006751F6 /* NetworkService */,
+				FEDED7B0257C3BB500E8AAB6 /* APIURL.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEDED7AD257C27A500E8AAB6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED7AE257C27B300E8AAB6 /* Log.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FEE66660257CD1BD006751F6 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				FEE66661257CD1CC006751F6 /* KeychainService.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		FEE66663257D41F4006751F6 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C1BCC257EA9C60018DAD5 /* NetworkServiceManager.swift */,
+				FEDED7AB257C1E5300E8AAB6 /* NetworkService.swift */,
+				FEE66664257D4219006751F6 /* NetworkServiceImpl.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		FEE66666257D4241006751F6 /* TransformerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FEDED7B2257C3E5A00E8AAB6 /* TransformerAPI.swift */,
+				FEE66667257D425D006751F6 /* TransformerAPIImpl.swift */,
+			);
+			path = TransformerAPI;
+			sourceTree = "<group>";
+		};
+		FEE66669257D42D5006751F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEE6666A257D42E4006751F6 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEE6666A257D42E4006751F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEE6666B257D430F006751F6 /* NetworkServiceTests.swift */,
+				FE407BE0257D61F1002FC4BA /* TransformerAPITests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEE6666D257D433E006751F6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FE63DF52257FFEE000383BFD /* Battle */,
+				FEE66669257D42D5006751F6 /* Services */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FEE6666E257D4345006751F6 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				FEE6666F257D4E72006751F6 /* Network */,
+			);
+			path = Fake;
+			sourceTree = "<group>";
+		};
+		FEE6666F257D4E72006751F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEE66670257D4E85006751F6 /* FakeURLProtocol.swift */,
+				FE407BE2257D6258002FC4BA /* NetworkServiceFakeImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEDED779257BCC6E00E8AAB6 /* HasbroTransformers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDED799257BCC7400E8AAB6 /* Build configuration list for PBXNativeTarget "HasbroTransformers" */;
+			buildPhases = (
+				CB640FDC6A89A59F4C278FEA /* [CP] Check Pods Manifest.lock */,
+				FEDED776257BCC6E00E8AAB6 /* Sources */,
+				FEDED777257BCC6E00E8AAB6 /* Frameworks */,
+				FEDED778257BCC6E00E8AAB6 /* Resources */,
+				AE5B6CAA749366A30DB04822 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HasbroTransformers;
+			productName = HasbroTransformers;
+			productReference = FEDED77A257BCC6E00E8AAB6 /* HasbroTransformers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEDED78F257BCC7400E8AAB6 /* HasbroTransformersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDED79C257BCC7400E8AAB6 /* Build configuration list for PBXNativeTarget "HasbroTransformersTests" */;
+			buildPhases = (
+				FEDED78C257BCC7400E8AAB6 /* Sources */,
+				FEDED78D257BCC7400E8AAB6 /* Frameworks */,
+				FEDED78E257BCC7400E8AAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEDED792257BCC7400E8AAB6 /* PBXTargetDependency */,
+			);
+			name = HasbroTransformersTests;
+			productName = HasbroTransformersTests;
+			productReference = FEDED790257BCC7400E8AAB6 /* HasbroTransformersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEDED772257BCC6E00E8AAB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Dhawal;
+				TargetAttributes = {
+					FEDED779257BCC6E00E8AAB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FEDED78F257BCC7400E8AAB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FEDED779257BCC6E00E8AAB6;
+					};
+				};
+			};
+			buildConfigurationList = FEDED775257BCC6E00E8AAB6 /* Build configuration list for PBXProject "HasbroTransformers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEDED771257BCC6E00E8AAB6;
+			productRefGroup = FEDED77B257BCC6E00E8AAB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEDED779257BCC6E00E8AAB6 /* HasbroTransformers */,
+				FEDED78F257BCC7400E8AAB6 /* HasbroTransformersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEDED778257BCC6E00E8AAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDED78A257BCC7300E8AAB6 /* LaunchScreen.storyboard in Resources */,
+				FEDED787257BCC7300E8AAB6 /* Assets.xcassets in Resources */,
+				FEDED7A7257BD38200E8AAB6 /* Podfile in Resources */,
+				FEDED785257BCC6E00E8AAB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDED78E257BCC7400E8AAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE5B6CAA749366A30DB04822 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasbroTransformers/Pods-HasbroTransformers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB640FDC6A89A59F4C278FEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HasbroTransformers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEDED776257BCC6E00E8AAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE63DF4A257FB64E00383BFD /* BattleViewController.swift in Sources */,
+				FE407BE5257E21A5002FC4BA /* TransformerListViewModel.swift in Sources */,
+				FEE66668257D425D006751F6 /* TransformerAPIImpl.swift in Sources */,
+				FE63DF5825801EDC00383BFD /* BattleCoordinator.swift in Sources */,
+				FE407BEF257E40EC002FC4BA /* UIStoryboard+Loader.swift in Sources */,
+				FE63DF4F257FD43100383BFD /* BattleCellViewModel.swift in Sources */,
+				FEDED7A5257BCF7000E8AAB6 /* TransformerListViewController.swift in Sources */,
+				FEDED77E257BCC6E00E8AAB6 /* AppDelegate.swift in Sources */,
+				FE407BF1257E443A002FC4BA /* BaseViewController.swift in Sources */,
+				FEDED7B3257C3E5A00E8AAB6 /* TransformerAPI.swift in Sources */,
+				FEDED7AF257C27B300E8AAB6 /* Log.swift in Sources */,
+				FEDED780257BCC6E00E8AAB6 /* SceneDelegate.swift in Sources */,
+				FE407BF5257E7BD0002FC4BA /* UIImageView+Cache.swift in Sources */,
+				FE407BF3257E6A08002FC4BA /* TransformerListCellView.swift in Sources */,
+				FE63DF47257FA44F00383BFD /* LaunchCoordinator.swift in Sources */,
+				FE8C1BD5257EC4E70018DAD5 /* TransformerUpdateCoordinator.swift in Sources */,
+				FE407BE9257E258C002FC4BA /* LoadingViewController.swift in Sources */,
+				FEE66662257CD1CC006751F6 /* KeychainService.swift in Sources */,
+				FE8C1BD0257EBCD50018DAD5 /* TransformerUpdateViewController.swift in Sources */,
+				FE407BEE257E40EC002FC4BA /* UIColor+Theme.swift in Sources */,
+				FE8C1BCB257EA9510018DAD5 /* TransformerListCoordinator.swift in Sources */,
+				FEDED7B1257C3BB500E8AAB6 /* APIURL.swift in Sources */,
+				FE8C1BD3257EBFEE0018DAD5 /* TransformerUpdateViewModel.swift in Sources */,
+				FEDED7AC257C1E5300E8AAB6 /* NetworkService.swift in Sources */,
+				FE8C1BCD257EA9C60018DAD5 /* NetworkServiceManager.swift in Sources */,
+				FE407BFA257E858F002FC4BA /* Localization.swift in Sources */,
+				FE63DF4D257FD11D00383BFD /* BattleViewModel.swift in Sources */,
+				FEE66665257D4219006751F6 /* NetworkServiceImpl.swift in Sources */,
+				FEDED7B5257C3EC100E8AAB6 /* Transformer.swift in Sources */,
+				FE63DF56258019CA00383BFD /* BattleCollectionCellView.swift in Sources */,
+				FE63DF51257FFEB300383BFD /* Transformer+Battle.swift in Sources */,
+				FE407BED257E40EC002FC4BA /* UIViewController+Subview.swift in Sources */,
+				FE407BE7257E21E6002FC4BA /* TransformerListCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDED78C257BCC7400E8AAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE407BE1257D61F1002FC4BA /* TransformerAPITests.swift in Sources */,
+				FEE6666C257D430F006751F6 /* NetworkServiceTests.swift in Sources */,
+				FE407BE3257D6258002FC4BA /* NetworkServiceFakeImpl.swift in Sources */,
+				FE63DF54257FFF0600383BFD /* TransformerBattleTests.swift in Sources */,
+				FE120ACA2580F0FD00808D5F /* BattleViewModelTests.swift in Sources */,
+				FEE66671257D4E85006751F6 /* FakeURLProtocol.swift in Sources */,
+				FEDED795257BCC7400E8AAB6 /* HasbroTransformersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEDED792257BCC7400E8AAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEDED779257BCC6E00E8AAB6 /* HasbroTransformers */;
+			targetProxy = FEDED791257BCC7400E8AAB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEDED783257BCC6E00E8AAB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDED784257BCC6E00E8AAB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEDED788257BCC7300E8AAB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDED789257BCC7300E8AAB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEDED797257BCC7400E8AAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = " ";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEDED798257BCC7400E8AAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = " ";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEDED79A257BCC7400E8AAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B86A6A6D94F5D061FA2001 /* Pods-HasbroTransformers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HasbroTransformers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27SM6HGC6Z;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dhawal.HasbroTransformers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEDED79B257BCC7400E8AAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABBD7DAEB4BB140C287655E /* Pods-HasbroTransformers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HasbroTransformers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27SM6HGC6Z;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dhawal.HasbroTransformers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEDED79D257BCC7400E8AAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HasbroTransformersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dhawal.HasbroTransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HasbroTransformers.app/HasbroTransformers";
+			};
+			name = Debug;
+		};
+		FEDED79E257BCC7400E8AAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HasbroTransformersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dhawal.HasbroTransformersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HasbroTransformers.app/HasbroTransformers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEDED775257BCC6E00E8AAB6 /* Build configuration list for PBXProject "HasbroTransformers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDED797257BCC7400E8AAB6 /* Debug */,
+				FEDED798257BCC7400E8AAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDED799257BCC7400E8AAB6 /* Build configuration list for PBXNativeTarget "HasbroTransformers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDED79A257BCC7400E8AAB6 /* Debug */,
+				FEDED79B257BCC7400E8AAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDED79C257BCC7400E8AAB6 /* Build configuration list for PBXNativeTarget "HasbroTransformersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDED79D257BCC7400E8AAB6 /* Debug */,
+				FEDED79E257BCC7400E8AAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEDED772257BCC6E00E8AAB6 /* Project object */;
+}

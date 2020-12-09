@@ -1,0 +1,8 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HasbroTransformers' do
+  pod 'RxSwift', '5.0.1'
+  pod 'RxCocoa', '5.0.1'
+end
