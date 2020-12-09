@@ -164,7 +164,7 @@ class TransformerBattleTests: XCTestCase {
         XCTAssertEqual(lostOpponent.battle(with: wonOpponent), .lost, "Battle does not match.")
     }
 
-    func testDestructionResult() {
+    func testTieResult() {
         let firstOpponent = Transformer(
             name: "Name",
             team: .autobot,
@@ -191,7 +191,7 @@ class TransformerBattleTests: XCTestCase {
             skill: 1
         )
         
-        XCTAssertEqual(firstOpponent.battle(with: secondOpponent), .destroyed, "Battle does not match.")
+        XCTAssertEqual(firstOpponent.battle(with: secondOpponent), .tie, "Battle does not match.")
     }
 
     

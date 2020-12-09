@@ -17,8 +17,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 1, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 0, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 1, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 0, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "1 Battle", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "Winning team: Autobots, Won 1 battle", "Final result description does not match.")
     }
@@ -30,8 +30,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer, autobotsTransformer, decepticonsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 2, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 0, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 2, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 0, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "2 Battles", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "Winning team: Decepticons, Won 2 battles", "Final result description does not match.")
     }
@@ -43,8 +43,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer, autobotsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 1, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 1, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 1, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 1, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "1 Battle", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "Winning team: Decepticons, Won 1 battle", "Final result description does not match.")
     }
@@ -56,8 +56,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer, autobotsTransformer, decepticonsTransformer, decepticonsTransformer, decepticonsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 2, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 2, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 2, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 2, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "2 Battles", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "Winning team: Decepticons, Won 2 battles", "Final result description does not match.")
     }
@@ -68,8 +68,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 1, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 0, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 1, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 0, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "1 Battle", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "It's a tie.", "Final result description does not match.")
     }
@@ -86,8 +86,8 @@ class BattleViewModelTests: XCTestCase {
         
         let viewModel = BattleViewModelImpl(transformers: [autobotsTransformer, decepticonsTransformer, specialAutobotsTransformer, specialDecepticonsTransformer, secondAutobotsTransformer, secondDecepticonsTransformer])
         
-        XCTAssertEqual(viewModel.numberOfBattles, 3, "Number of battles does not match.")
-        XCTAssertEqual(viewModel.numberOfSurvivours, 0, "Number of survivors does not match.")
+        XCTAssertEqual(viewModel.numberOfPlannedBattles, 3, "Number of battles does not match.")
+        XCTAssertEqual(viewModel.numberOfSurvivors, 0, "Number of survivors does not match.")
         XCTAssertEqual(viewModel.totalPerformedBattles, "2 Battles", "Total performed battles does not match.")
         XCTAssertEqual(viewModel.finalResultDescription, "Game ended abruptly and all the remaining competitors have been destroyed.", "Final result description does not match.")
     }
